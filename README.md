@@ -51,7 +51,7 @@ Now we have a bunch `.uasset` file that we need to parse or open.
    After 123GB of disk-space and 15 hours of building time, I runned the built version to find out that UE4 does not import its own files (coming from another version...).  
    Very disappointing...
 
-## Reverse Binary
+## Reverse the binary
 
 1. I extracted the class information using `ptype` and saved it a file.
 2. Reversed the Player class method `PerformSetCircuitInput` and put a C++ prototype in a file to more readibility.  
