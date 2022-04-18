@@ -10,7 +10,7 @@ void brute_force() {
     size_t len = game->GetCircuitOutputCount("FinalStage");
     bool* tmp = new bool[len];
     clock_t start = clock();
-    for (uint32_t state = 0; state <= UINT_MAX; state++) {
+    for (uint64_t state = 0; state <= UINT_MAX; state++) {
         bool result = false;
         game->GetCircuitOutputs("FinalStage", state, tmp, len, &result);
         if (result) {
